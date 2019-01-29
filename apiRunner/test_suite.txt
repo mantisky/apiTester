@@ -1,0 +1,52 @@
+测试套件接口：
+/createTestSuite
+数据示例：
+{
+    "name":"接口测试201901291030",
+    "state":1,
+    "config":1,
+    "setup":2,
+    "test":"[3,4,5,6]"
+}
+备注：
+    1.state取值：0--关闭，1--开启，2--删除
+    2.config和setup取值:test_case表id
+    3.test取值:test_case表id组成列表，然后转成字符串
+    
+返回示例：
+
+
+/retrieveTestSuite
+数据示例：
+{
+    "name":"接口测试"
+}
+备注：
+    1.name:模糊搜索
+返回示例：
+
+
+/updateTestSuite
+数据示例：
+{
+	"name":"接口测试201901291030",
+    "state":1,
+    "config":1,
+    "setup":2,
+    "test":"[3,4,5,6]"
+}
+备注：
+    1.state取值：0--关闭，1--开启，2--删除
+    2.config和setup取值:test_case表id
+    3.test取值:test_case表id组成列表，然后转成字符串
+	
+返回示例：
+
+
+/deleteTestSuite
+数据示例：
+{
+	"id":2
+}
+备注：
+	1.删除指定id的测试套件，state改为2
